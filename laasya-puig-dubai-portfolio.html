@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Laasya Mallavarapu · Puig Middle East concept portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F0FF;--card:#FFFFFF;--ink:#14123A;--mute:#5B5880;--line:#DDD8F5;--blue:#3A3CFF;--coral:#FF5C4D;--sun:#FFB400;--mint:#14C8A8;--lilac:#B9A6FF;--on:#FFFFFF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E0C2B;--card:#1A1745;--ink:#F3F0FF;--mute:#B2AEDB;--line:#32307A;--on:#0E0C2B}}
+:root[data-theme="dark"]{--bg:#0E0C2B;--card:#1A1745;--ink:#F3F0FF;--mute:#B2AEDB;--line:#32307A;--on:#0E0C2B}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 16px/1.6 "Manrope",system-ui,sans-serif;overflow-x:hidden}
+.w{max-width:1060px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:"Syne",system-ui,sans-serif;font-weight:800;line-height:1.05;margin:0;letter-spacing:-.02em}
+h1{font-size:clamp(40px,8vw,84px)}
+h2{font-size:clamp(28px,4.5vw,46px);margin-bottom:12px}
+h3{font-size:21px;margin-bottom:8px}
+p{margin:0 0 12px;max-width:64ch}
+.mute{color:var(--mute)}
+header{padding:56px 0 0;position:relative;overflow:hidden}
+.hero{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:20px;align-items:center}
+@media(max-width:800px){.hero{grid-template-columns:1fr}}
+.sig{display:inline-block;background:var(--ink);color:var(--bg);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:700;margin-bottom:22px}
+.hl{background:linear-gradient(100deg,var(--coral),var(--sun));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:19px;color:var(--mute);margin-top:20px;max-width:50ch}
+.stage{position:relative;height:340px}
+.stage svg{position:absolute;filter:drop-shadow(0 18px 22px rgba(58,60,255,.25));animation:bob 6s ease-in-out infinite}
+.b1{left:2%;bottom:6%;width:34%;color:var(--blue)}
+.b2{left:32%;bottom:18%;width:38%;color:var(--coral);animation-delay:-2s!important}
+.b3{right:0;bottom:2%;width:30%;color:var(--mint);animation-delay:-4s!important}
+.orb{position:absolute;border-radius:50%;filter:blur(2px);animation:bob 8s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-16px) rotate(2deg)}}
+.belt{margin-top:46px;background:var(--ink);color:var(--bg);overflow:hidden;white-space:nowrap;padding:14px 0;transform:rotate(-1deg) scale(1.02)}
+.belt div{display:inline-block;animation:belt 28s linear infinite;font:800 18px "Syne",sans-serif}
+.belt span{margin:0 22px}
+.belt span:nth-child(4n+1){color:var(--sun)}.belt span:nth-child(4n+2){color:var(--coral)}.belt span:nth-child(4n+3){color:var(--mint)}
+@keyframes belt{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+section{padding:60px 0}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border-radius:20px;padding:24px;border:2px solid var(--line)}
+.card.c1{border-color:var(--blue)}.card.c2{border-color:var(--coral)}.card.c3{border-color:var(--mint)}
+.tool{display:grid;gap:26px;grid-template-columns:minmax(0,5fr) minmax(0,6fr);background:var(--card);border:2px solid var(--ink);border-radius:26px;padding:28px;margin-top:22px;box-shadow:8px 8px 0 var(--blue)}
+@media(max-width:780px){.tool{grid-template-columns:1fr;padding:18px}}
+label{display:flex;justify-content:space-between;font-size:14px;font-weight:800;margin:16px 0 6px}
+label output{color:var(--coral)}
+input[type=range]{width:100%;accent-color:var(--blue)}
+.seg{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.seg button{font:inherit;font-weight:700;font-size:14px;padding:8px 16px;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.kpi{border-radius:16px;padding:14px;color:#14123A}
+.kpi:nth-child(1){background:var(--lilac)}.kpi:nth-child(2){background:var(--sun)}.kpi:nth-child(3){background:var(--mint)}.kpi:nth-child(4){background:#FF9D92}
+.kpi b{display:block;font:800 30px/1.1 "Syne",sans-serif}
+.kpi span{font-size:13px;font-weight:700}
+.split{display:flex;height:16px;border-radius:8px;overflow:hidden;margin:20px 0 8px;background:var(--line)}
+.split i{display:block;transition:width .3s}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--mute);font-weight:700}
+.legend em{font-style:normal}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.read{margin-top:18px;padding:14px 16px;background:var(--bg);border-radius:14px;font-size:15px;border:2px dashed var(--lilac)}
+.fine{font-size:13px;color:var(--mute);margin-top:14px}
+.row{display:grid;grid-template-columns:160px 1fr 40px;gap:12px;align-items:center;margin:12px 0;font-size:14px;font-weight:700}
+@media(max-width:560px){.row{grid-template-columns:110px 1fr 34px}}
+.bar{height:16px;background:var(--line);border-radius:8px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:8px;background:var(--blue);transition:width .3s}
+.row:first-of-type .bar i{background:linear-gradient(90deg,var(--coral),var(--sun))}
+.tl{counter-reset:s;list-style:none;margin:22px 0 0;padding:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.tl li{counter-increment:s;border-radius:20px;padding:20px;color:#14123A}
+.tl li:nth-child(1){background:var(--lilac)}.tl li:nth-child(2){background:var(--mint)}.tl li:nth-child(3){background:var(--sun)}
+.tl li::before{content:"Days " counter(s,decimal-leading-zero);font:800 13px "Syne",sans-serif;display:block;margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:15px;margin-top:16px;background:var(--card);border-radius:16px;overflow:hidden}
+td,th{text-align:left;padding:14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:800 14px "Syne",sans-serif;background:var(--ink);color:var(--bg)}
+.cta{display:inline-block;margin-top:22px;padding:16px 30px;border-radius:999px;background:var(--coral);color:#fff;text-decoration:none;font:800 16px "Syne",sans-serif;box-shadow:5px 5px 0 var(--ink)}
+footer{padding:30px 0 60px;font-size:13px;color:var(--mute)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="flask" viewBox="0 0 100 150"><rect x="38" y="4" width="24" height="22" rx="4" fill="#14123A"/><rect x="30" y="24" width="40" height="10" rx="3" fill="#FFB400"/><rect x="8" y="34" width="84" height="110" rx="22" fill="currentColor"/><rect x="18" y="46" width="14" height="84" rx="7" fill="#fff" opacity=".35"/><circle cx="58" cy="92" r="20" fill="none" stroke="#fff" stroke-width="3" opacity=".8"/></symbol>
+<symbol id="round" viewBox="0 0 100 150"><path d="M42 6h16v14H42z" fill="#14123A"/><rect x="34" y="18" width="32" height="12" rx="4" fill="#FFB400"/><circle cx="50" cy="90" r="52" fill="currentColor"/><ellipse cx="30" cy="70" rx="9" ry="22" fill="#fff" opacity=".35"/><path d="M34 100q16 16 32 0" stroke="#fff" stroke-width="4" fill="none" opacity=".8"/></symbol>
+<symbol id="tall" viewBox="0 0 100 150"><rect x="30" y="2" width="40" height="30" rx="8" fill="#14123A"/><rect x="26" y="32" width="48" height="112" rx="10" fill="currentColor"/><rect x="34" y="42" width="8" height="90" rx="4" fill="#fff" opacity=".35"/><rect x="48" y="70" width="18" height="36" rx="4" fill="#fff" opacity=".85"/></symbol>
+</defs></svg>
+<header><div class="w"><div class="hero">
+<div>
+<div class="sig">Laasya Mallavarapu · ESCP · Berlin to Dubai</div>
+<h1>The next Puig launch in the Middle East, <span class="hl">modelled before it happens.</span></h1>
+<p class="lead">An independent concept study for the Marketing Graduate role in Dubai. Three working tools, built on assumptions you can change, show how I turn consumer evidence into launch decisions.</p>
+</div>
+<div class="stage" aria-hidden="true">
+<div class="orb" style="width:90px;height:90px;background:var(--sun);left:8%;top:6%"></div>
+<div class="orb" style="width:46px;height:46px;background:var(--lilac);right:10%;top:12%;animation-delay:-3s"></div>
+<svg class="b1" viewBox="0 0 100 150"><use href="#tall"/></svg>
+<svg class="b2" viewBox="0 0 100 150"><use href="#round"/></svg>
+<svg class="b3" viewBox="0 0 100 150"><use href="#flask"/></svg>
+</div></div></div>
+<div class="belt" aria-hidden="true"><div><span>Consumer insight</span><span>Launch planning</span><span>Competitor intelligence</span><span>Data storytelling</span><span>Gifting calendars</span><span>Retail experience</span><span>Consumer insight</span><span>Launch planning</span><span>Competitor intelligence</span><span>Data storytelling</span><span>Gifting calendars</span><span>Retail experience</span></div></div>
+</header>
+
+<section><div class="w">
+<h2>Project one: the launch budget planner</h2>
+<p class="mute">A fragrance launch in Dubai wins or loses on how the budget moves between digital, retail experience and creators. Move the sliders and see what each choice does to reach, orders and return.</p>
+<div class="tool">
+<div>
+<label for="b">Launch budget <output id="bo"></output></label>
+<input id="b" type="range" min="300000" max="3000000" step="50000" value="1200000">
+<label for="d">Digital and social <output id="do"></output></label>
+<input id="d" type="range" min="0" max="100" step="5" value="45">
+<label for="r">Retail and in-store experience <output id="ro"></output></label>
+<input id="r" type="range" min="0" max="100" step="5" value="30">
+<label>Market scenario</label>
+<div class="seg" id="sc"></div>
+<p class="fine">Creators and events take the remaining share. Planning assumptions: digital media costs AED 22 per 1,000 views, with 30% unique reach and a 0.1% order rate. Retail costs AED 28 per engaged visitor with a 9% order rate. Creator content costs AED 6 per engaged viewer with a 0.8% order rate. Average order is AED 520.</p>
+</div>
+<div>
+<div class="kpis">
+<div class="kpi"><b id="k1"></b><span>people reached</span></div>
+<div class="kpi"><b id="k2"></b><span>orders</span></div>
+<div class="kpi"><b id="k3"></b><span>revenue (AED)</span></div>
+<div class="kpi"><b id="k4"></b><span>return on spend</span></div>
+</div>
+<div class="split" id="sp"></div>
+<div class="legend" id="lg"></div>
+<div class="read" id="rd"></div>
+</div>
+</div>
+</div></section>
+
+<section><div class="w">
+<h2>Project two: who to win first</h2>
+<p class="mute">Dubai is five markets in one city. Rank the audiences by what matters to you: how fast each is growing, or how naturally each fits a Puig brand.</p>
+<div class="card" style="margin-top:20px">
+<label for="g">Weighting <output id="go"></output></label>
+<input id="g" type="range" min="0" max="100" value="50">
+<div id="seg"></div>
+<p class="fine">Scores are my own 1 to 10 judgements from public market knowledge and are meant to be challenged. In the full study each one would be replaced by survey and retail-panel data.</p>
+</div>
+</div></section>
+
+<section><div class="w">
+<h2>Three ideas worth testing</h2>
+<div class="grid" style="margin-top:20px">
+<div class="card c1"><svg width="46" height="69" viewBox="0 0 100 150" style="color:var(--blue)"><use href="#tall"/></svg><h3>The gifting calendar</h3><p>Ramadan, Eid and the winter season carry much of the region’s fragrance gifting. A launch tracker built around them would time sampling, gift sets and retail theatre to the weeks that matter.</p></div>
+<div class="card c2"><svg width="46" height="69" viewBox="0 0 100 150" style="color:var(--coral)"><use href="#round"/></svg><h3>Layering as a language</h3><p>Fragrance layering is part of regional scent culture. A guided layering moment in store and on social could connect a Puig brand to a habit shoppers already have, instead of asking them to learn a new one.</p></div>
+<div class="card c3"><svg width="46" height="69" viewBox="0 0 100 150" style="color:var(--mint)"><use href="#flask"/></svg><h3>The South Asian shopper</h3><p>Dubai’s South Asian community is large and often overlooked in luxury beauty. I speak Telugu and Hindi, and Puig’s portfolio includes Kama Ayurveda, so I would test content and in-store storytelling for this audience.</p></div>
+</div>
+</div></section>
+
+<section><div class="w">
+<h2>My first 90 days</h2>
+<ol class="tl">
+<li><h3>Learn the machine</h3><p>Master the marketing calendar, product information and launch trackers. Shadow every Brand Review and note where information gets lost.</p></li>
+<li><h3>Build the signal</h3><p>Set up a monthly competitor and consumer-trend report for the team, using the benchmarking approach from my SAMS work.</p></li>
+<li><h3>Own a small win</h3><p>Take one launch task from brief to delivery, track its result and share what I learned in a one-page review.</p></li>
+</ol>
+</div></section>
+
+<section><div class="w">
+<h2>Why the evidence is real</h2>
+<table>
+<tr><th>What Puig needs</th><th>What I have already done</th></tr>
+<tr><td>Consumer insight</td><td>Analysed feedback from 250+ users at Moksh. Satisfaction rose from 65% to 90%.</td></tr>
+<tr><td>Competitor intelligence</td><td>Benchmarked 15+ competitors and mapped 50+ customer journeys at SAMS. Resolution time fell 30%.</td></tr>
+<tr><td>Accurate trackers and reports</td><td>Built a five-department dashboard at Beldi &amp; Associates. Reporting time fell 60%.</td></tr>
+<tr><td>Evidence-led recommendations</td><td>Zythum expansion study: 62.2% consumer interest, modelled 2.6-year ROI.</td></tr>
+<tr><td>Cultural and digital fluency</td><td>Co-authored research on generative AI and consumer trust, presented at ITAIS 2025 and IMTC 2026.</td></tr>
+</table>
+<a class="cta" href="mailto:laasya.mallavarapu@edu.escp.eu">Invite me to the next round</a>
+<p class="fine" style="margin-top:16px">laasya.mallavarapu@edu.escp.eu · +49 159 0801 0231 · linkedin.com/in/laasya-mallavarapu</p>
+</div></section>
+
+<footer><div class="w">An independent concept study. All figures on this page are illustrative planning assumptions I chose, not Puig data, and Puig has not reviewed or endorsed this work.</div></footer>
+
+<script>
+var $=function(i){return document.getElementById(i)};
+var fmt=function(n){return Math.round(n).toLocaleString("en-US")};
+var short=function(n){return n>=1e6?(n/1e6).toFixed(1)+"M":n>=1e3?Math.round(n/1e3)+"k":Math.round(n)};
+var SC={Cautious:.7,Base:1,Strong:1.3},sc="Base";
+var box=$("sc");
+Object.keys(SC).forEach(function(k){var x=document.createElement("button");x.textContent=k;x.setAttribute("aria-pressed",k==="Base");x.onclick=function(){sc=k;[].forEach.call(box.children,function(c){c.setAttribute("aria-pressed",c===x)});run()};box.appendChild(x)});
+function run(){
+var B=+$("b").value,d=+$("d").value,r=+$("r").value;
+if(d+r>100){r=100-d;$("r").value=r}
+var c=100-d-r,m=SC[sc];
+$("bo").textContent="AED "+short(B);$("do").textContent=d+"%";$("ro").textContent=r+"%";
+var bd=B*d/100,br=B*r/100,bc=B*c/100;
+var reach=bd/22*1000*.3,vis=br/28,view=bc/6;
+var od=reach*.001*m,or=vis*.09*m,oc=view*.008*m;
+var o=od+or+oc,rev=o*520;
+$("k1").textContent=short(reach+vis+view);$("k2").textContent=fmt(o);$("k3").textContent=short(rev);$("k4").textContent=(rev/B).toFixed(1)+"x";
+var cols=["var(--blue)","var(--coral)","var(--sun)"],nm=["Digital","Retail","Creators"],sh=[d,r,c];
+$("sp").innerHTML=sh.map(function(s,i){return '<i style="width:'+s+'%;background:'+cols[i]+'"></i>'}).join("");
+$("lg").innerHTML=sh.map(function(s,i){return '<em><span class="dot" style="background:'+cols[i]+'"></span>'+nm[i]+" "+s+"%</em>"}).join("");
+var y=[.3/22*1000*.001*520,.09/28*520,.008/6*520].map(function(v){return v*m});
+var best=y.indexOf(Math.max.apply(null,y));
+$("rd").textContent="Read-out: per AED 1,000 spent, retail returns about AED "+fmt(y[1]*1000)+", creators AED "+fmt(y[2]*1000)+" and digital AED "+fmt(y[0]*1000)+" in sales. "+["Digital is the cheapest way to reach people, but a low order rate means it needs retail and creators to turn attention into purchase.","Retail experience converts best at scale only if footfall follows, so pair it with digital to fill the store.","Creators convert well here, so test how far that holds before scaling it."][best];
+}
+["b","d","r"].forEach(function(i){$(i).oninput=run});run();
+var S=[["Gulf nationals",7,9,6],["South Asian residents",9,6,8],["Western expats",6,7,5],["Travel-retail visitors",8,6,7],["Young beauty natives",5,8,9]];
+function seg(){
+var w=+$("g").value/100;$("go").textContent=w>.55?"Growth first":w<.45?"Brand fit first":"Balanced";
+var L=S.map(function(s){return{n:s[0],v:s[1]*.4+(w*s[3]+(1-w)*s[2])*.6}}).sort(function(a,b){return b.v-a.v});
+$("seg").innerHTML=L.map(function(s){return '<div class="row"><span>'+s.n+'</span><div class="bar"><i style="width:'+s.v*10+'%"></i></div><b>'+s.v.toFixed(1)+'</b></div>'}).join("");
+}
+$("g").oninput=seg;seg();
+</script>
+</body>
+</html>
